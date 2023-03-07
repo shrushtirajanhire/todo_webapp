@@ -1,0 +1,171 @@
+@import url("https://fonts.googleapis.com/css2?family=Gloock&family=Source+Sans+Pro:wght@400;700&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gloock", serif;
+  font-family: "Source Sans Pro", sans-serif;
+}
+.heading h1 {
+  margin-top: 40px;
+  margin-left: 80px;
+  font-size: 32px;
+  font-family: "Gloock", serif;
+}
+
+ul {
+  display: flex;
+  justify-content: space-around;
+}
+
+.navbar-brand {
+  font-family: "Gloock", serif !important;
+  font-size: 32px;
+}
+.nav-item {
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.addTask {
+  padding: 20px 15px 20px 15px;
+  display: flex;
+  justify-content: space-between;
+  border: 1px solid rgba(0, 0, 0, 0.492);
+  border-radius: 10px;
+
+  width: 50%;
+  margin: auto;
+  margin-top: 50px;
+}
+
+.addTask h3 {
+  font-size: 32px;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.addbtn {
+  padding-top: 5px;
+  padding-bottom: 5px;
+  padding-right: 40px;
+  padding-left: 40px;
+  background-color: #005dff;
+  border: none;
+  color: white;
+  border-radius: 5px;
+}
+
+/* Task */
+
+.task {
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  margin: auto;
+  margin-top: 30px;
+  padding: 20px;
+  /* border: 1px solid rgba(0, 0, 0, 0.492); */
+  border-radius: 15px;
+  transition: all 0.5s ease-out;
+  align-items: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.title {
+  font-family: "Gloock", serif;
+  font-size: 24px;
+  /* border: 1px solid red; */
+}
+
+.task input {
+  width: 100%;
+  padding: 10px;
+  border-radius: 5px;
+  /* border-bottom: 0px; */
+  margin: 10px;
+}
+.task input:focus {
+  border: 2px solid #005dff;
+}
+
+/* tasklist */
+
+.listoftask {
+  width: 50%;
+  margin: auto;
+  border: 2px solid black;
+  padding: 10px;
+  display: flex;
+  align-items: baseline;
+  justify-content: space-around;
+}
+
+/* table */
+
+/* calender code  */
+
+.weekmenu li a {
+  text-decoration: none;
+  color: black;
+  font-family: "Source Sans Pro", sans-serif;
+}
+
+.active {
+  /* background-color: #005dff; */
+  color: white !important;
+}
+
+.liactive {
+  background-color: #005dff;
+  color: white !important;
+}
+
+.weekmenu {
+  margin-top: 20px;
+}
+
+.weekmenu li {
+  display: inline-block;
+  margin: 0 10px;
+  padding: 10px;
+  border: 1px solid #5794ff;
+  border-radius: 5px;
+  cursor: pointer;
+  /* background-color: #005dff; */
+}
+
+@media screen and (max-width: 768px) {
+  .menu {
+    display: none;
+  }
+  .menu-toggle {
+    display: block;
+  }
+  .menu-toggle a {
+    color: #ffffff;
+    font-size: 16px;
+    text-decoration: none;
+  }
+  .menu-toggle:hover {
+    cursor: pointer;
+  }
+  .menu-toggle:focus {
+    outline: none;
+  }
+  .navbar.responsive .menu {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  .navbar.responsive .menu li {
+    margin: 10px 0;
+  }
+  .navbar.responsive .menu-toggle {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+  }
+}

@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="../css/home_css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary">
+        <div class="container-fluid">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo01"
+                aria-controls="navbarTogglerDemo01" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarTogglerDemo01">
+                <a class="navbar-brand" href="#">Weekly Planner</a>
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" tabindex="-1" aria-disabled="true">Profile</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="heading">
+        <h1>
+            Your Dashboard
+        </h1>
+    </div>
+    <!-- calender code -->
+    <ul class="weekmenu">
+        <li class="liactive"><a href="#" class="active">Plan Your Days</a></li>
+        <li><a href="#">Plan Your Week</a></li>
+        <li><a href="#">Plan Your Months</a></li>
+        <li><a href="#">Plan Your Quarter</a></li>
+        <li><a href="#">Plan Your Year</a></li>
+    </ul>
+    <div class="addTask">
+        <h3>
+            Add Task
+        </h3>
+        <button class="addbtn" onclick="showTask()"><svg xmlns="http://www.w3.org/2000/svg" width="30" height="30"
+                fill="currentColor" class="bi bi-plus" viewBox="0 0 16 16">
+                <path
+                    d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z" />
+            </svg></button>
+    </div>
+    <div class="task" id="task">
+        <h4 class="title"> Add to Your Schedule</h4>
+        <input type="text" name="taskname" id="taskname" placeholder="Task Name">
+        <input type="text" name="description" id="taskDescription" placeholder="Description">
+        <input type="datetime-local" name="datetime" id="datetime">
+        <button class="btn btn-primary tasklist" onclick="addtasktoschedule()"> Add To Your Task </button>
+    </div>
+    <div class="listoftask">
+        <input type="checkbox" name="markascomplete" id="markascomplete">
+        <p class="showtaskname"> Doctor Appointment </p>
+        <p class="showdescription"> Go for health checkup</p>
+        <p class="showtime"> Tomorrow 10 A:M </p>
+    </div>
+
+
+
+
+
+
+    <script src="../js/home/script.js"></script>
+</body>
+
+</html>

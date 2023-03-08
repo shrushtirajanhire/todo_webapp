@@ -1,87 +1,87 @@
 * {
-  box-sizing: border-box;
-  margin: 0;
-  padding: 0;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 body {
-  font-family: Arial, sans-serif;
-  background-image: linear-gradient(to bottom right, #ff8a65, #ffc107);
+    font-family: Arial, sans-serif;
+    background-image: linear-gradient(to bottom right, #ff8a65, #ffc107);
 }
 
 .container {
-  max-width: 600px;
-  margin: 0 auto;
-  padding: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  height: 100vh;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
 }
 
 .login-box {
     width: 100%;
-  background-color: #fff;
-  padding: 50px;
-  border-radius: 10px;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  text-align: center;
+    background-color: #fff;
+    padding: 50px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    text-align: center;
 }
 
 h1 {
-  font-size: 36px;
-  margin-bottom: 30px;
-  color: #333;
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #333;
 }
 
 form {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
 }
 
 label {
-  font-size: 18px;
-  margin-bottom: 10px;
-  color: #333;
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #333;
 }
 
 input[type="text"],
 input[type="password"] {
-  width: 100%;
-  padding: 10px;
-  margin-bottom: 20px;
-  border-radius: 5px;
-  border: none;
-  box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: none;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
 }
 
 button {
-  background-color: #ff8a65;
-  color: #fff;
-  border: none;
-  padding: 10px 20px;
-  border-radius: 5px;
-  font-size: 18px;
-  cursor: pointer;
-  transition: background-color 0.3s ease;
+    background-color: #ff8a65;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
 }
 
 button:hover {
-  background-color: #ffc107;
+    background-color: #ffc107;
 }
 
 p {
-  font-size: 16px;
-  margin-top: 20px;
-  color: #333;
+    font-size: 16px;
+    margin-top: 20px;
+    color: #333;
 }
 
 a {
-  color: #ff8a65;
-  text-decoration: none;
+    color: #ff8a65;
+    text-decoration: none;
 }
 
 a:hover {
-  text-decoration: underline;
+    text-decoration: underline;
 }
